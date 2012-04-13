@@ -1,1 +1,9 @@
 This is a fairly rough example of how to use lua inside pxelinux.  Yes, this is production code :)
+
+To use:
+
+ 1) setup a netboot server (a bit out of the scope for this readme)
+ 2) grab the latest syslinux, build it, and copy the appropriate modules to the root of your tftp server (often /tftpboot)
+ 3) cp PXELINUX-iris.cfg to /tftpboot>/pxelinux.cfg/default
+ 4) cp pxeboot.lua to /tftpboot
+ 5) hack away on the lua script adding your own motherboard + kernel parameters
