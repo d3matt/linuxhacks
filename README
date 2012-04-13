@@ -8,4 +8,4 @@ To use:
  4) cp pxeboot.lua to /tftpboot
  5) hack away on the lua script adding your own motherboard + kernel parameters
 
-This script will print out the manufacturer and product names for easy addition to the script!
+This script will print out the manufacturer and product names of unknown boards for easy addition to the script!
