@@ -1,0 +1,12 @@
+#!/bin/bash
+
+TMPXAUTH=$(mktemp)
+
+cleanup() {
+    sleep 1
+    rm -f $TMPXAUTH
+}
+
+cp ~/.Xauthority $TMPXAUTH
+sudo XAUTHORITY=/tmp/.Xauthority $@
+cleanup &
