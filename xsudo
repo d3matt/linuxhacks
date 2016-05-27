@@ -9,5 +9,5 @@ cleanup() {
 
 cp ~/.Xauthority $TMPXAUTH
 chmod 644 $TMPXAUTH
-sudo XAUTHORITY="$TMPXAUTH" $@
+sudo XAUTHORITY="$TMPXAUTH" "$@"
 cleanup &
